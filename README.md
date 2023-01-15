@@ -50,6 +50,15 @@ OpenCore 0.8.8，机型可选MacPro或iMac，系统为 Ventura 13.1
 * 下载[OCAT](https://github.com/ic005k/OCAuxiliaryTools/releases)，读取EFI\OC目录下的config.plist，检查更新并生成新的三码信息
 * BIOS里选择从U盘启动，按指示安装即可
 
+# PS.其他
+本机的ACPI文件，可以使用[SSDTTime](https://github.com/corpnewt/SSDTTime)快速生成
+
+SMCProcessor.kext和选项ProvideCurrentCpuInfo不兼容，只能二选一
+
+NVRAM的boot-args添加-v可以看到报错信息，或者在[开机时按Command-V](https://support.apple.com/zh-cn/HT201255)
+
+# 截图展示
+
 ![关于本机](PICS/01.png)
 
 ![显卡/显示器](PICS/02.png)
